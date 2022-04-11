@@ -1,8 +1,6 @@
 package ru.inventorium.qa.tests;
 
-import io.qameta.allure.Feature;
-import io.qameta.allure.Owner;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -14,8 +12,8 @@ import ru.inventorium.qa.models.reqres.UserData;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static ru.inventorium.qa.Specs.request;
-import static ru.inventorium.qa.Specs.responseSpec;
+import static ru.inventorium.qa.ReqresSpecs.request;
+import static ru.inventorium.qa.ReqresSpecs.responseSpec;
 
 @Layer("rest")
 @Owner("roman-che")
