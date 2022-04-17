@@ -36,8 +36,8 @@ public class DemoWebShopTest extends UiTestBase {
         Configuration.baseUrl = "http://demowebshop.tricentis.com";
     }
 
-    @Microservice("Wish list")
-    @DisplayName("Add product to Wishlist")
+    @Microservice("Authorization")
+    @DisplayName("Authorize and assert user data")
     @Step("Get Cookie and test profile")
     @Tag("API")
     @Test
