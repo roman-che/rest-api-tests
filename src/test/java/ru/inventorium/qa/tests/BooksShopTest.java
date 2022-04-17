@@ -1,20 +1,20 @@
 package ru.inventorium.qa.tests;
 
+import org.junit.jupiter.api.*;
+import ru.inventorium.qa.models.bookshop.GenerateToken;
+import ru.inventorium.qa.models.bookshop.UserLoginData;
+import ru.inventorium.qa.annotations.Layer;
+import ru.inventorium.qa.annotations.Microservice;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
-import org.junit.jupiter.api.*;
-import ru.inventorium.qa.annotations.Layer;
-import ru.inventorium.qa.annotations.Microservice;
-import ru.inventorium.qa.models.bookshop.GenerateToken;
-import ru.inventorium.qa.models.bookshop.UserLoginData;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import static ru.inventorium.qa.filters.CustomLogFilter.customLogFilter;
 
 @Layer("rest")
@@ -76,7 +76,7 @@ public class BooksShopTest {
     }
 
     @Microservice("Authorization")
-    @DisplayName("Check API user's authorize")
+    @DisplayName("Check API user authorization")
     @Test
     @Disabled
     void authorizeApiTest() {
@@ -98,7 +98,7 @@ public class BooksShopTest {
     }
 
     @Microservice("Authorization")
-    @DisplayName("Check API user's authorize with Listener")
+    @DisplayName("Check API user authorization with Listener")
     @Test
     void authorizeWithListenerTest() {
         GenerateToken generateToken =
@@ -120,7 +120,7 @@ public class BooksShopTest {
     }
 
     @Microservice("Authorization")
-    @DisplayName("Check API user's authorize with custom log filter")
+    @DisplayName("Check API user authorization with custom log filter")
     @Test
     void authorizeWithTemplatesTest() {
         GenerateToken generateToken =

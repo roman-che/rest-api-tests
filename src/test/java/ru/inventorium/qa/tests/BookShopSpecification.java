@@ -4,8 +4,6 @@ import ru.inventorium.qa.annotations.Layer;
 import ru.inventorium.qa.annotations.Microservice;
 import ru.inventorium.qa.testbase.ApiRequestsBase;
 
-
-
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
@@ -28,7 +26,7 @@ public class BookShopSpecification extends ApiRequestsBase {
 
     @Microservice("Authorization")
     @Tag("API")
-    @DisplayName("Check API user's authorize with specification")
+    @DisplayName("Check API user authorization with specification")
     @Test
     void authorizeWithSpecificationTest() {
             given()

@@ -15,6 +15,7 @@ import ru.inventorium.qa.annotations.Layer;
 import ru.inventorium.qa.annotations.Microservice;
 import ru.inventorium.qa.testbase.UiTestBase;
 
+import static ru.inventorium.qa.filters.CustomLogFilter.customLogFilter;
 import static com.codeborne.selenide.Condition.checked;
 import static com.codeborne.selenide.Condition.value;
 import static com.codeborne.selenide.Selenide.$;
@@ -22,7 +23,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
-import static ru.inventorium.qa.filters.CustomLogFilter.customLogFilter;
+
 
 @Layer("rest")
 @Owner("roman-che")
