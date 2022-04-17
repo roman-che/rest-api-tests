@@ -55,3 +55,39 @@ They're in Suit 'BooksShopTest'
 </p>
 
 ___
+
+## Run tests from terminal locally
+
+### Run tests with filled remote properties:
+
+```bash
+gradle clean test
+```
+
+### Run tests remote with parameters:
+
+where:
+> + ALLURE_NOTIFICATIONS_VERSION - select Allure notification version. By default - 2.2.3
+> + PROJECT_NAME - description text that will be represented in telegram notification
+
+<p align="center">
+  <img src="img/screenshots/jenkinsBuildWithParameters.png">
+</p>
+
+### Serve report:
+
+```bash
+allure serve build/allure-results
+```
+
+
+___
+
+## Results analysis
+
+The test results can be found in:
++ [Jenkins](#jenkins)
++ [Allure Report](#allure-report)
++ [Allure TestOps](#allure-testOps)
++ [Jira](#jira)
+
