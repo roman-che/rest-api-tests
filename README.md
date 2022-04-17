@@ -130,7 +130,7 @@ List of tests grouped by features and launch history:
 
 ### Jira
 
-Also Jira integration is implemented in the project:
+The project supports Jira integration by means of Allure TestOps issue export.
 
 <p align="center">
   <img src="img/screenshots/jiraIssueExport.png">
