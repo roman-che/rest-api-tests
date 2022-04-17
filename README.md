@@ -105,3 +105,53 @@ The example of a test build report grouped by suits is presented below.
 <p align="center">
   <img src="img/screenshots/allureResults.png">
 </p>
+
+### Allure TestOps
+
+Allure TestOps is used as a storage for all tests cases (automated and manual), launches, their results. You may watch statistic and reports by all launches and results
+
+Dashboards:
+
+<p align="center">
+  <img src="img/screenshots/allureTestOpsDashboardOverview.png">
+</p>
+
+List of launches:
+
+<p align="center">
+  <img src="img/screenshots/allureTestOpsListOfLaunches.png">
+</p>
+
+List of tests grouped by features and launch history:
+
+<p align="center">
+  <img src="img/screenshots/ListOfTestsGroupedByLaunchHistory.png">
+</p>
+
+### Jira
+
+Also Jira integration is implemented in the project:
+
+<p align="center">
+  <img src="img/screenshots/jiraIssueExport.png">
+</p>
+
+___
+
+## Example of video with test running in Allure Report
+
+A video example showing simultaneous REST and UI test is presented below. This video was attached automatically to the Allure report.
+
+
+___
+
+## Notifications in Telegram channel
+
+The project is configured to send notifications with the launch results from Jenkins to Telegram channel. 
+The project can be configured to send notifications by Email, Slack, Skype and Mattermost as well.
+
+<p align="center">
+  <img src="img/screenshots/telegramBotResponse.png">
+</p>
+
+___
