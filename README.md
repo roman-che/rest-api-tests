@@ -142,7 +142,9 @@ ___
 
 A video example showing simultaneous REST and UI test is presented below. This video was attached automatically to the Allure report.
 
-https://github.com/roman-che/rest-api-tests/blob/main/img/screenshots/demoWebShopTestVideo.mp4
+
+https://user-images.githubusercontent.com/56552851/163715064-6c82630d-3ef5-4292-b23a-42d930ab8068.mp4
+
 
 ___
 
