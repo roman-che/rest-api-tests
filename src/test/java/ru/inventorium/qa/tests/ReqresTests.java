@@ -12,8 +12,8 @@ import ru.inventorium.qa.models.reqres.UserData;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static ru.inventorium.qa.ReqresSpecs.request;
-import static ru.inventorium.qa.ReqresSpecs.responseSpec;
+import static ru.inventorium.qa.tests.ReqresSpecification.request;
+import static ru.inventorium.qa.tests.ReqresSpecification.responseSpec;
 
 @Layer("rest")
 @Owner("roman-che")

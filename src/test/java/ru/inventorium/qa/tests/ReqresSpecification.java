@@ -1,4 +1,4 @@
-package ru.inventorium.qa;
+package ru.inventorium.qa.tests;
 
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
@@ -9,7 +9,7 @@ import ru.inventorium.qa.testbase.ApiRequestsBase;
 import static io.restassured.RestAssured.with;
 import static ru.inventorium.qa.filters.CustomLogFilter.customLogFilter;
 
-public class ReqresSpecs extends ApiRequestsBase {
+public class ReqresSpecification extends ApiRequestsBase {
     public static RequestSpecification request = with()
             .baseUri("https://reqres.in")
             .basePath("/api")
