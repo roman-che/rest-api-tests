@@ -80,7 +80,6 @@ where:
 allure serve build/allure-results
 ```
 
-
 ___
 
 ## Results analysis
@@ -91,3 +90,18 @@ The test results can be found in:
 + [Allure TestOps](#allure-testOps)
 + [Jira](#jira)
 
+### [Jenkins](https://jenkins.autotests.cloud/job/09-roman-che-rest-api-tests/)
+
+Once the launch finished you may watch statistics and open the `Allure Report` <img width="2%" title="Allure Report" src="img/logo/Allure_Report_icon.svg">
+
+<p align="center">
+  <img src="img/screenshots/jenkinsBuildProjectDashboard.png">
+</p>
+
+### Allure Report
+
+The example of a test build report grouped by suits is presented below.
+
+<p align="center">
+  <img src="img/screenshots/allureResults.png">
+</p>
